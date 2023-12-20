@@ -39,23 +39,40 @@ Fase 6: Reporte de los resultados
 
 ## Archivos
 
-`bdd_m3.mwb`: Base de Datos
+Carpeta Historico: 
 
 `criterios_columnas-1.ipynb` y `criterios_columnas-2.ipynb`: Acciones a efectual en las columnas del archivo
-
-`notas.ipynb`: Notas
 
 `fase1_eda_histórico.ipynb`: Información de las columnas
 
 `fase1_eda.ipynb`: Información de las columnas
 
+`insercion.ipynb` : 
+
 `madre.ipynb`: Archivo madre con todos los procesos
 
-`proyecto_soporte.py`: Soporte
+`notas.ipynb`: Notas
+
+`visualizacion.ipynb`: gráficas
+
+Carpeta SRC:
+
+`__init__.py` :
+
+`abc_proyecto.spl` : base de datos
 
 `DATA.csv`: CSV original con los datos de los empleados
 
 `definitivo.csv`:CSV limpio
+
+`proyecto_soporte.py`: Archivo soporte sql
+
+`soporte.py` : Archivo soporte
+
+Fuera de las carpetas:
+
+`main.py`: proyecto principal en python
+
 
 `README.md`: Información sobre el proyecto y cómo utilizarlo.
 
