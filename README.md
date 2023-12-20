@@ -71,6 +71,21 @@ Herramientas y bibliotecas empleadas: jupyter notebook, pandas, numpy, scipy.sta
 
 ## Resultados
 
+Según los datos obtenidos y haciendo los análisis de datos podemos observar en los empleados:
+
+Hay un tasa de abandono del 16,4%
+
+La tasa de abandono es mayor en pesonas entre 25-35 años de edad
+
+La tasa de abandono es mayor en varones que en muejeres
+
+Hay más abandonos de empleados en nivel de educacion "College" y menos en "Master"
+
+La relación entre al tasa de rotación y la satisfacción de los empleados en la empresa es mayor dependiendo de la rotación
+
+
+
+
 
 
 ## Contribución
