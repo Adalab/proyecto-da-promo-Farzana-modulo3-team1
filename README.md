@@ -83,6 +83,7 @@ Hay más abandonos de empleados en nivel de educacion "College" y menos en "Mast
 
 La relación entre al tasa de rotación y la satisfacción de los empleados en la empresa es mayor dependiendo de la rotación
 
+Confirmamos que existe una diferencia significativa entre las medias de ambos grupos y por tanto podemos confirmar que existe una relación significativa entre el nivel de satisfacción y el de abandono
 
 
 
