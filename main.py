@@ -2,6 +2,8 @@
 import pandas as pd
 import numpy as np
 from SRC import soporte
+from SRC import soporte_queries_creacion_bbdd as query
+from SRC import soporte_bbdd_abc as soporte_bbdd
 #%%
 df = soporte.leer_csv('DATA.csv')
 
@@ -71,3 +73,20 @@ columnas_renombrar= {'age': 'age', 'attrition': 'attrition', 'businesstravel': '
 df = soporte.renombrar_columnas(df,columnas_renombrar)
 
 soporte.generacion_csv(df,'definitivo')
+
+soporte_bbdd.creacion_bbdd_tablas(query.query_creacion_bbdd, 'AlumnaAdalab')
+
+soporte_bbdd.creacion_bbdd_tablas(query.query_creacion_tabla_salario 'AlumnaAdalab', 'abc_corporation')
+
+soporte_bbdd.creacion_bbdd_tablas(query.query_creacion_tabla_abandono_satisfaccion 'AlumnaAdalab', 'abc_corporation')
+
+soporte_bbdd.creacion_bbdd_tablas(query.query_creacion_tabla_detalles_personales 'AlumnaAdalab', 'abc_corporation')
+
+soporte_bbdd.creacion_bbdd_tablas(query.query_creacion_tabla_condiciones 'AlumnaAdalab', 'abc_corporation')
+
+df = pd.read_csv('SRC/definitivo.csv')
+datos_tabla = list(set(zip(df)))
+soporte_bbdd.insertar_datos(query.query_insertar_salario, 'AlumnaAdalab', 'abc_corporation', datos_tabla)
+soporte_bbdd.insertar_datos(query.query_insertar_abandono_satisfaccion, 'AlumnaAdalab', 'abc_corporation', datos_tabla)
+soporte_bbdd.insertar_datos(query.query_insertar_detalles_personales, 'AlumnaAdalab', 'abc_corporation', datos_tabla)
+soporte_bbdd.insertar_datos(query.query_insertar_condiciones, 'AlumnaAdalab', 'abc_corporation', datos_tabla)
